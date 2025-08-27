@@ -1,0 +1,251 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-115060396d6d5e3948ca.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "mocap_interfaces__py",
+					"jsonFile" : "directory-mocap_interfaces__py-84d93430d583b331cd83.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "build/mocap_interfaces/mocap_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "mocap_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_mocap_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_mocap_interfaces_egg-5935e991269902545857.json",
+					"name" : "ament_cmake_python_build_mocap_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_mocap_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_mocap_interfaces-d1ccaf69c0115b350303.json",
+					"name" : "ament_cmake_python_copy_mocap_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces-86600c64a2090262e2b8.json",
+					"name" : "mocap_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces__cpp-a719e632c651cc1732e7.json",
+					"name" : "mocap_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "mocap_interfaces__py::@020a5868b0802cabbd9e",
+					"jsonFile" : "target-mocap_interfaces__py-a5c985cd2995d60f5ca8.json",
+					"name" : "mocap_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces__rosidl_generator_c-1bd9b9a502bcab0456e6.json",
+					"name" : "mocap_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces__rosidl_generator_py-ee400e3b258c4533e837.json",
+					"name" : "mocap_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces__rosidl_generator_type_description-0b3ad2ce984dcb85739d.json",
+					"name" : "mocap_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces__rosidl_typesupport_c-4cc9641096de201161d7.json",
+					"name" : "mocap_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces__rosidl_typesupport_cpp-bf75b24939b892d18548.json",
+					"name" : "mocap_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces__rosidl_typesupport_fastrtps_c-be4d98df74f4fe234302.json",
+					"name" : "mocap_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces__rosidl_typesupport_fastrtps_cpp-f43e1d6c65b2c7146241.json",
+					"name" : "mocap_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces__rosidl_typesupport_introspection_c-0a5beed0893a68d2c5bd.json",
+					"name" : "mocap_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces__rosidl_typesupport_introspection_cpp-d4d6aec62df4fbaa9afe.json",
+					"name" : "mocap_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces_s__rosidl_typesupport_c-035c43e577b0f5a974a9.json",
+					"name" : "mocap_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces_s__rosidl_typesupport_fastrtps_c-e89b620662762a5ce2c8.json",
+					"name" : "mocap_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces_s__rosidl_typesupport_introspection_c-d4a36009560eaaf4b143.json",
+					"name" : "mocap_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap_interfaces_uninstall-70d8875477d12e10886e.json",
+					"name" : "mocap_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e855b54efe4be2f63ca9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "webcam_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-webcam_node-716245463d128573a88c.json",
+					"name" : "webcam_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ieerasufcg/arena_ws/src/mocap_interfaces/build/mocap_interfaces",
+		"source" : "/home/ieerasufcg/arena_ws/src/mocap_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,62 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+-- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ieerasufcg/arena_ws/src/mocap_interfaces/build/mocap_interfaces/rosidl_generator_c>;$<BUILD_INTERFACE:/home/ieerasufcg/arena_ws/src/mocap_interfaces/build/mocap_interfaces/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/ieerasufcg/arena_ws/src/mocap_interfaces/build/mocap_interfaces/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/ieerasufcg/arena_ws/src/mocap_interfaces/build/mocap_interfaces/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/ieerasufcg/arena_ws/src/mocap_interfaces/build/mocap_interfaces/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/ieerasufcg/arena_ws/src/mocap_interfaces/build/mocap_interfaces/rosidl_typesupport_introspection_cpp>;/home/ieerasufcg/arena_ws/src/mocap_interfaces/build/mocap_interfaces/rosidl_generator_c;/home/ieerasufcg/arena_ws/src/mocap_interfaces/build/mocap_interfaces/rosidl_generator_py
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ieerasufcg/arena_ws/src/mocap_interfaces/build/mocap_interfaces
+[  2%] Built target mocap_interfaces__rosidl_generator_type_description
+[  5%] [32mBuilding CXX object CMakeFiles/webcam_node.dir/src/webcam_publisher_node.cpp.o[0m
+[  5%] Built target ament_cmake_python_copy_mocap_interfaces
+[  8%] Built target mocap_interfaces__cpp
+[ 22%] Built target mocap_interfaces__rosidl_generator_c
+[ 38%] Built target mocap_interfaces__rosidl_typesupport_introspection_c
+[ 38%] Built target mocap_interfaces__rosidl_typesupport_c
+[ 47%] Built target mocap_interfaces__rosidl_typesupport_cpp
+[ 55%] Built target mocap_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 63%] Built target mocap_interfaces__rosidl_typesupport_introspection_cpp
+[ 72%] Built target mocap_interfaces__rosidl_typesupport_fastrtps_c
+[ 72%] Built target mocap_interfaces
+[ 75%] [34m[1mGenerating Python code for ROS interfaces[0m
+running egg_info
+writing mocap_interfaces.egg-info/PKG-INFO
+writing dependency_links to mocap_interfaces.egg-info/dependency_links.txt
+writing top-level names to mocap_interfaces.egg-info/top_level.txt
+[01m[K/home/ieerasufcg/arena_ws/src/mocap_interfaces/src/webcam_publisher_node.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+   11 | #include [01;31m[K"cv_bridge/cv_bridge.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/webcam_node.dir/build.make:76: CMakeFiles/webcam_node.dir/src/webcam_publisher_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:623: CMakeFiles/webcam_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 75%] Built target mocap_interfaces__py
+reading manifest file 'mocap_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'mocap_interfaces.egg-info/SOURCES.txt'
+[ 75%] Built target ament_cmake_python_build_mocap_interfaces_egg
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "mocap_interfaces__py",
+		"source" : "/home/ieerasufcg/arena_ws/build/mocap_interfaces/mocap_interfaces__py"
+	}
+}

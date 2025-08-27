@@ -1,0 +1,3 @@
+[console_scripts]
+target_detector = system_logic.target_detector_node:main
+target_subscriber = system_logic.target_subscriber_node:main

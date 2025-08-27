@@ -1,0 +1,107 @@
+[0.000000] (-) TimerEvent: {}
+[0.000272] (-) JobUnselected: {'identifier': 'system_logic'}
+[0.000354] (mocap_interfaces) JobQueued: {'identifier': 'mocap_interfaces', 'dependencies': OrderedDict()}
+[0.000372] (mocap_interfaces) JobStarted: {'identifier': 'mocap_interfaces'}
+[0.004873] (mocap_interfaces) JobProgress: {'identifier': 'mocap_interfaces', 'progress': 'cmake'}
+[0.005204] (mocap_interfaces) JobProgress: {'identifier': 'mocap_interfaces', 'progress': 'build'}
+[0.005587] (mocap_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ieerasufcg/arena_ws/build/mocap_interfaces', '--', '-j16', '-l16'], 'cwd': '/home/ieerasufcg/arena_ws/build/mocap_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ieerasufcg', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ieerasufcg', 'OLDPWD': '/home/ieerasufcg/arena_ws/src/mocap_interfaces', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2656', 'SYSTEMD_EXEC_PID': '3202', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '21180', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ieerasufcg', 'JOURNAL_STREAM': '9:19118', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ieerasufcg', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/ieerasufcg/.juliaup/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ER00:@/tmp/.ICE-unix/2959,unix/ER00:/tmp/.ICE-unix/2959', 'INVOCATION_ID': '80146a5777e04e0487d0f406e90b63d9', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:4196c75e-1d99-49ab-9f37-c7e0a7bc26fa', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ieerasufcg/arena_ws/build/mocap_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.037435] (mocap_interfaces) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/webcam_node.dir/src/webcam_publisher_node.cpp.o\x1b[0m\n'}
+[0.037588] (mocap_interfaces) StdoutLine: {'line': b'[  5%] Built target mocap_interfaces__rosidl_generator_type_description\n'}
+[0.042905] (mocap_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_mocap_interfaces\n'}
+[0.049920] (mocap_interfaces) StdoutLine: {'line': b'[  8%] Built target mocap_interfaces__cpp\n'}
+[0.050942] (mocap_interfaces) StdoutLine: {'line': b'[ 22%] Built target mocap_interfaces__rosidl_generator_c\n'}
+[0.057646] (mocap_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[0.057828] (mocap_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[0.057904] (mocap_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[0.057977] (mocap_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[0.058048] (mocap_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[0.058114] (mocap_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[0.099927] (-) TimerEvent: {}
+[0.195190] (mocap_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap_interfaces/msg/target__type_support.cpp.o\x1b[0m\n'}
+[0.196569] (mocap_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap_interfaces/msg/target__type_support.cpp.o\x1b[0m\n'}
+[0.200033] (-) TimerEvent: {}
+[0.206055] (mocap_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/target__type_support.cpp.o\x1b[0m\n'}
+[0.206290] (mocap_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/target__type_support.c.o\x1b[0m\n'}
+[0.208444] (mocap_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.214548] (mocap_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap_interfaces/msg/detail/dds_fastrtps/target__type_support.cpp.o\x1b[0m\n'}
+[0.220839] (mocap_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap_interfaces/msg/detail/target__type_support_c.cpp.o\x1b[0m\n'}
+[0.225504] (mocap_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[0.225726] (mocap_interfaces) StdoutLine: {'line': b'writing mocap_interfaces.egg-info/PKG-INFO\n'}
+[0.225840] (mocap_interfaces) StdoutLine: {'line': b'writing dependency_links to mocap_interfaces.egg-info/dependency_links.txt\n'}
+[0.225943] (mocap_interfaces) StdoutLine: {'line': b'writing top-level names to mocap_interfaces.egg-info/top_level.txt\n'}
+[0.231508] (mocap_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libmocap_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[0.252418] (mocap_interfaces) StdoutLine: {'line': b'[ 61%] Built target mocap_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.252661] (mocap_interfaces) StdoutLine: {'line': b'[ 61%] Built target mocap_interfaces__rosidl_typesupport_c\n'}
+[0.278700] (mocap_interfaces) StdoutLine: {'line': b"reading manifest file 'mocap_interfaces.egg-info/SOURCES.txt'\n"}
+[0.279057] (mocap_interfaces) StdoutLine: {'line': b"writing manifest file 'mocap_interfaces.egg-info/SOURCES.txt'\n"}
+[0.300161] (-) TimerEvent: {}
+[0.300957] (mocap_interfaces) StdoutLine: {'line': b'[ 61%] Built target ament_cmake_python_build_mocap_interfaces_egg\n'}
+[0.387954] (mocap_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[0.400269] (-) TimerEvent: {}
+[0.400943] (mocap_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[0.414206] (mocap_interfaces) StdoutLine: {'line': b'[ 66%] Built target mocap_interfaces__rosidl_typesupport_cpp\n'}
+[0.442227] (mocap_interfaces) StdoutLine: {'line': b'[ 66%] Built target mocap_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.500362] (-) TimerEvent: {}
+[0.506283] (mocap_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[0.508475] (mocap_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[0.556545] (mocap_interfaces) StdoutLine: {'line': b'[ 72%] Built target mocap_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.558628] (mocap_interfaces) StdoutLine: {'line': b'[ 72%] Built target mocap_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.571102] (mocap_interfaces) StdoutLine: {'line': b'[ 72%] Built target mocap_interfaces\n'}
+[0.584337] (mocap_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[0.600438] (-) TimerEvent: {}
+[0.700622] (-) TimerEvent: {}
+[0.729997] (mocap_interfaces) StdoutLine: {'line': b'[ 75%] Built target mocap_interfaces__py\n'}
+[0.742792] (mocap_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_generator_py.dir/rosidl_generator_py/mocap_interfaces/msg/_target_s.c.o\x1b[0m\n'}
+[0.800714] (-) TimerEvent: {}
+[0.811840] (mocap_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library libmocap_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[0.838738] (mocap_interfaces) StdoutLine: {'line': b'[ 80%] Built target mocap_interfaces__rosidl_generator_py\n'}
+[0.852328] (mocap_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/mocap_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[0.852476] (mocap_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/mocap_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[0.852529] (mocap_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/mocap_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[0.900830] (-) TimerEvent: {}
+[0.912617] (mocap_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[0.912763] (mocap_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[0.912817] (mocap_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[0.932827] (mocap_interfaces) StdoutLine: {'line': b'[ 97%] Built target mocap_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[0.933008] (mocap_interfaces) StdoutLine: {'line': b'[ 97%] Built target mocap_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[0.933082] (mocap_interfaces) StdoutLine: {'line': b'[ 97%] Built target mocap_interfaces_s__rosidl_typesupport_c\n'}
+[1.000947] (-) TimerEvent: {}
+[1.101204] (-) TimerEvent: {}
+[1.201439] (-) TimerEvent: {}
+[1.301684] (-) TimerEvent: {}
+[1.401935] (-) TimerEvent: {}
+[1.502194] (-) TimerEvent: {}
+[1.602436] (-) TimerEvent: {}
+[1.702684] (-) TimerEvent: {}
+[1.802938] (-) TimerEvent: {}
+[1.858573] (mocap_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ieerasufcg/arena_ws/src/mocap_interfaces/src/webcam_publisher_node.cpp:67:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksecond argument of \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[01;32m\x1b[K main\x1b[m\x1b[K(int, char*)\x1b[m\x1b[K\xe2\x80\x99 should be \xe2\x80\x98\x1b[01m\x1b[Kchar **\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmain\x07-Wmain\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.858881] (mocap_interfaces) StderrLine: {'line': b'   67 | int \x1b[01;35m\x1b[Kmain\x1b[m\x1b[K(int argc, char * argv) {\n'}
+[1.858935] (mocap_interfaces) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.858981] (mocap_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ieerasufcg/arena_ws/src/mocap_interfaces/src/webcam_publisher_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[01;32m\x1b[K main\x1b[m\x1b[K(int, char*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.859021] (mocap_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ieerasufcg/arena_ws/src/mocap_interfaces/src/webcam_publisher_node.cpp:68:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst char* const*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.859064] (mocap_interfaces) StderrLine: {'line': b'   68 |     rclcpp::init(argc, \x1b[01;31m\x1b[Kargv\x1b[m\x1b[K);\n'}
+[1.859103] (mocap_interfaces) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.859150] (mocap_interfaces) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[1.859192] (mocap_interfaces) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[1.859228] (mocap_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25\x1b[m\x1b[K,\n'}
+[1.859266] (mocap_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[1.859303] (mocap_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[1.859339] (mocap_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ieerasufcg/arena_ws/src/mocap_interfaces/src/webcam_publisher_node.cpp:6\x1b[m\x1b[K:\n'}
+[1.859375] (mocap_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:77:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 2 of \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::\x1b[01;32m\x1b[Kinit\x1b[m\x1b[K(int, const char* const*, const InitOptions&, SignalHandlerOptions)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.859414] (mocap_interfaces) StderrLine: {'line': b'   77 |   \x1b[01;36m\x1b[Kchar const * const * argv\x1b[m\x1b[K,\n'}
+[1.859452] (mocap_interfaces) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[1.903060] (-) TimerEvent: {}
+[2.003305] (-) TimerEvent: {}
+[2.103515] (-) TimerEvent: {}
+[2.203762] (-) TimerEvent: {}
+[2.304017] (-) TimerEvent: {}
+[2.404293] (-) TimerEvent: {}
+[2.504506] (-) TimerEvent: {}
+[2.604741] (-) TimerEvent: {}
+[2.704985] (-) TimerEvent: {}
+[2.789003] (mocap_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/webcam_node.dir/build.make:76: CMakeFiles/webcam_node.dir/src/webcam_publisher_node.cpp.o] Error 1\n'}
+[2.789235] (mocap_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:623: CMakeFiles/webcam_node.dir/all] Error 2\n'}
+[2.789416] (mocap_interfaces) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.790761] (mocap_interfaces) CommandEnded: {'returncode': 2}
+[2.795299] (mocap_interfaces) JobEnded: {'identifier': 'mocap_interfaces', 'rc': 2}
+[2.795896] (-) EventReactorShutdown: {}

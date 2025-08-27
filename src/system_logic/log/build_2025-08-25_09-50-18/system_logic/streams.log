@@ -1,0 +1,22 @@
+[0.510s] Invoking command in '/home/ieerasufcg/arena_ws/src/system_logic': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/system_logic build --build-base /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/build install --record /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/install.log --single-version-externally-managed install_data
+[0.681s] running egg_info
+[0.694s] writing build/system_logic/system_logic.egg-info/PKG-INFO
+[0.694s] writing dependency_links to build/system_logic/system_logic.egg-info/dependency_links.txt
+[0.694s] writing entry points to build/system_logic/system_logic.egg-info/entry_points.txt
+[0.694s] writing requirements to build/system_logic/system_logic.egg-info/requires.txt
+[0.694s] writing top-level names to build/system_logic/system_logic.egg-info/top_level.txt
+[0.721s] reading manifest file 'build/system_logic/system_logic.egg-info/SOURCES.txt'
+[0.722s] writing manifest file 'build/system_logic/system_logic.egg-info/SOURCES.txt'
+[0.722s] running build
+[0.722s] running build_py
+[0.722s] running install
+[0.726s] running install_lib
+[0.740s] running install_data
+[0.740s] running install_egg_info
+[0.754s] removing '/home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages/system_logic-0.0.0-py3.12.egg-info' (and everything under it)
+[0.754s] Copying build/system_logic/system_logic.egg-info to /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages/system_logic-0.0.0-py3.12.egg-info
+[0.754s] running install_scripts
+[0.840s] Installing target_detector script to /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/system_logic
+[0.840s] Installing target_processor script to /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/system_logic
+[0.840s] writing list of installed files to '/home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/install.log'
+[0.854s] Invoked command in '/home/ieerasufcg/arena_ws/src/system_logic' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/system_logic build --build-base /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/build install --record /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/install.log --single-version-externally-managed install_data

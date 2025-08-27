@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/ieerasufcg/arena_ws/build/mocap_interfaces/mocap_interfaces__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "mocap_interfaces::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "mocap_interfaces__py::@020a5868b0802cabbd9e",
+	"name" : "mocap_interfaces__py",
+	"paths" : 
+	{
+		"build" : "mocap_interfaces__py",
+		"source" : "/home/ieerasufcg/arena_ws/build/mocap_interfaces/mocap_interfaces__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/ieerasufcg/arena_ws/build/mocap_interfaces/mocap_interfaces__py/CMakeFiles/mocap_interfaces__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/ieerasufcg/arena_ws/build/mocap_interfaces/mocap_interfaces__py/CMakeFiles/mocap_interfaces__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/ieerasufcg/arena_ws/build/mocap_interfaces/rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

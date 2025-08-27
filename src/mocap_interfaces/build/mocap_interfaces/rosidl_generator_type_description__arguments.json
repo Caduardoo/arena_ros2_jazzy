@@ -1,0 +1,11 @@
+{
+  "package_name": "mocap_interfaces",
+  "output_dir": "/home/ieerasufcg/arena_ws/src/mocap_interfaces/build/mocap_interfaces/rosidl_generator_type_description/mocap_interfaces",
+  "idl_tuples": [
+    "/home/ieerasufcg/arena_ws/src/mocap_interfaces/build/mocap_interfaces/rosidl_adapter/mocap_interfaces:msg/Target.idl"
+  ],
+  "include_paths": [
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs"
+  ]
+}

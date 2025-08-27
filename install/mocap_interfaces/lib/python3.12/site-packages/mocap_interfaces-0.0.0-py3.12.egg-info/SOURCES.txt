@@ -1,0 +1,8 @@
+setup.py
+mocap_interfaces/__init__.py
+mocap_interfaces.egg-info/PKG-INFO
+mocap_interfaces.egg-info/SOURCES.txt
+mocap_interfaces.egg-info/dependency_links.txt
+mocap_interfaces.egg-info/top_level.txt
+mocap_interfaces/msg/__init__.py
+mocap_interfaces/msg/_target.py

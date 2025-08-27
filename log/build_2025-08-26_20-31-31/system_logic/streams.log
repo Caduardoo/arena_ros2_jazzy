@@ -1,0 +1,41 @@
+[0.511s] Invoking command in '/home/ieerasufcg/arena_ws/src/system_logic': AMENT_PREFIX_PATH=/home/ieerasufcg/arena_ws/install/mocap_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ieerasufcg/arena_ws/install/mocap_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ieerasufcg/arena_ws/install/mocap_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ieerasufcg/arena_ws/build/system_logic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages:/home/ieerasufcg/arena_ws/install/mocap_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/system_logic build --build-base /home/ieerasufcg/arena_ws/build/system_logic/build install --record /home/ieerasufcg/arena_ws/build/system_logic/install.log --single-version-externally-managed install_data
+[0.679s] running egg_info
+[0.679s] creating ../../build/system_logic/system_logic.egg-info
+[0.692s] writing ../../build/system_logic/system_logic.egg-info/PKG-INFO
+[0.693s] writing dependency_links to ../../build/system_logic/system_logic.egg-info/dependency_links.txt
+[0.693s] writing entry points to ../../build/system_logic/system_logic.egg-info/entry_points.txt
+[0.693s] writing requirements to ../../build/system_logic/system_logic.egg-info/requires.txt
+[0.693s] writing top-level names to ../../build/system_logic/system_logic.egg-info/top_level.txt
+[0.693s] writing manifest file '../../build/system_logic/system_logic.egg-info/SOURCES.txt'
+[0.720s] reading manifest file '../../build/system_logic/system_logic.egg-info/SOURCES.txt'
+[0.720s] writing manifest file '../../build/system_logic/system_logic.egg-info/SOURCES.txt'
+[0.720s] running build
+[0.720s] running build_py
+[0.720s] creating /home/ieerasufcg/arena_ws/build/system_logic/build
+[0.720s] creating /home/ieerasufcg/arena_ws/build/system_logic/build/lib
+[0.720s] creating /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic
+[0.720s] copying system_logic/target_subscriber_node.py -> /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic
+[0.721s] copying system_logic/__init__.py -> /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic
+[0.721s] copying system_logic/target_detector_node.py -> /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic
+[0.721s] running install
+[0.725s] running install_lib
+[0.738s] creating /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic
+[0.738s] copying /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic/target_subscriber_node.py -> /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic
+[0.738s] copying /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic/__init__.py -> /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic
+[0.738s] copying /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic/target_detector_node.py -> /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic
+[0.738s] byte-compiling /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic/target_subscriber_node.py to target_subscriber_node.cpython-312.pyc
+[0.739s] byte-compiling /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic/__init__.py to __init__.cpython-312.pyc
+[0.739s] byte-compiling /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic/target_detector_node.py to target_detector_node.cpython-312.pyc
+[0.739s] running install_data
+[0.739s] creating /home/ieerasufcg/arena_ws/install/system_logic/share/ament_index
+[0.739s] creating /home/ieerasufcg/arena_ws/install/system_logic/share/ament_index/resource_index
+[0.739s] creating /home/ieerasufcg/arena_ws/install/system_logic/share/ament_index/resource_index/packages
+[0.739s] copying resource/system_logic -> /home/ieerasufcg/arena_ws/install/system_logic/share/ament_index/resource_index/packages
+[0.739s] copying package.xml -> /home/ieerasufcg/arena_ws/install/system_logic/share/system_logic
+[0.739s] running install_egg_info
+[0.753s] Copying ../../build/system_logic/system_logic.egg-info to /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic-0.0.0-py3.12.egg-info
+[0.754s] running install_scripts
+[0.840s] Installing target_detector script to /home/ieerasufcg/arena_ws/install/system_logic/lib/system_logic
+[0.840s] Installing target_subscriber script to /home/ieerasufcg/arena_ws/install/system_logic/lib/system_logic
+[0.840s] writing list of installed files to '/home/ieerasufcg/arena_ws/build/system_logic/install.log'
+[0.854s] Invoked command in '/home/ieerasufcg/arena_ws/src/system_logic' returned '0': AMENT_PREFIX_PATH=/home/ieerasufcg/arena_ws/install/mocap_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ieerasufcg/arena_ws/install/mocap_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ieerasufcg/arena_ws/install/mocap_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ieerasufcg/arena_ws/build/system_logic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages:/home/ieerasufcg/arena_ws/install/mocap_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/system_logic build --build-base /home/ieerasufcg/arena_ws/build/system_logic/build install --record /home/ieerasufcg/arena_ws/build/system_logic/install.log --single-version-externally-managed install_data

@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/system_logic/system_logic.egg-info
+writing ../../build/system_logic/system_logic.egg-info/PKG-INFO
+writing dependency_links to ../../build/system_logic/system_logic.egg-info/dependency_links.txt
+writing entry points to ../../build/system_logic/system_logic.egg-info/entry_points.txt
+writing requirements to ../../build/system_logic/system_logic.egg-info/requires.txt
+writing top-level names to ../../build/system_logic/system_logic.egg-info/top_level.txt
+writing manifest file '../../build/system_logic/system_logic.egg-info/SOURCES.txt'
+reading manifest file '../../build/system_logic/system_logic.egg-info/SOURCES.txt'
+writing manifest file '../../build/system_logic/system_logic.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ieerasufcg/arena_ws/build/system_logic/build
+creating /home/ieerasufcg/arena_ws/build/system_logic/build/lib
+creating /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic
+copying system_logic/target_subscriber_node.py -> /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic
+copying system_logic/__init__.py -> /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic
+copying system_logic/target_detector_node.py -> /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic
+running install
+running install_lib
+creating /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic
+copying /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic/target_subscriber_node.py -> /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic
+copying /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic/__init__.py -> /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic
+copying /home/ieerasufcg/arena_ws/build/system_logic/build/lib/system_logic/target_detector_node.py -> /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic
+byte-compiling /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic/target_subscriber_node.py to target_subscriber_node.cpython-312.pyc
+byte-compiling /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic/target_detector_node.py to target_detector_node.cpython-312.pyc
+running install_data
+creating /home/ieerasufcg/arena_ws/install/system_logic/share/ament_index
+creating /home/ieerasufcg/arena_ws/install/system_logic/share/ament_index/resource_index
+creating /home/ieerasufcg/arena_ws/install/system_logic/share/ament_index/resource_index/packages
+copying resource/system_logic -> /home/ieerasufcg/arena_ws/install/system_logic/share/ament_index/resource_index/packages
+copying package.xml -> /home/ieerasufcg/arena_ws/install/system_logic/share/system_logic
+running install_egg_info
+Copying ../../build/system_logic/system_logic.egg-info to /home/ieerasufcg/arena_ws/install/system_logic/lib/python3.12/site-packages/system_logic-0.0.0-py3.12.egg-info
+running install_scripts
+Installing target_detector script to /home/ieerasufcg/arena_ws/install/system_logic/lib/system_logic
+Installing target_subscriber script to /home/ieerasufcg/arena_ws/install/system_logic/lib/system_logic
+writing list of installed files to '/home/ieerasufcg/arena_ws/build/system_logic/install.log'

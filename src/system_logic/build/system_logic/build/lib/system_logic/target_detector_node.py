@@ -1,0 +1,39 @@
+import rclpy
+from rclpy.node import Node
+
+from mocap_interfaces.msg import Target
+from geometry_msgs.msg import Point
+
+class TDNode(Node):
+    def __init__(self):
+        super().__init__('Target_Detector')
+        # Type, Topic_name, Queue Size
+        self.publisher_=self.create_publisher(Target,'Target_position',10)
+
+        timer_period = 2.0
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.get_logger().info('Target detector node Started. Publishing...')
+
+    def timer_callback(self):
+        msg = Target()
+
+        # TO DO: Add 2D marker detection Logic
+
+        msg.Target_name = "test_target"
+        msg.position = Point(x=1.0,y=2.0,z=0.0)
+
+        self.publisher_.publish(msg)
+
+        self.get_logger().info(f'Publishing: "{msg.Target_name}" at position (x={msg.position.x}, y={msg.position.y})')
+    
+def main(args=None):
+    rclpy.init(args=args)
+
+    node = TDNode()
+
+    rclpy.spin(node)
+
+    rclpy.shutdown()
+
+if __name__=='__main__':
+    main()

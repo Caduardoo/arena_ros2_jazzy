@@ -1,0 +1,41 @@
+[0.631s] Invoking command in '/home/ieerasufcg/arena_ws/src/system_logic': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/system_logic build --build-base /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/build install --record /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/install.log --single-version-externally-managed install_data
+[0.801s] running egg_info
+[0.801s] creating build/system_logic/system_logic.egg-info
+[0.814s] writing build/system_logic/system_logic.egg-info/PKG-INFO
+[0.815s] writing dependency_links to build/system_logic/system_logic.egg-info/dependency_links.txt
+[0.815s] writing entry points to build/system_logic/system_logic.egg-info/entry_points.txt
+[0.815s] writing requirements to build/system_logic/system_logic.egg-info/requires.txt
+[0.815s] writing top-level names to build/system_logic/system_logic.egg-info/top_level.txt
+[0.815s] writing manifest file 'build/system_logic/system_logic.egg-info/SOURCES.txt'
+[0.842s] reading manifest file 'build/system_logic/system_logic.egg-info/SOURCES.txt'
+[0.842s] writing manifest file 'build/system_logic/system_logic.egg-info/SOURCES.txt'
+[0.842s] running build
+[0.842s] running build_py
+[0.842s] creating /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/build
+[0.842s] creating /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/build/lib
+[0.842s] creating /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/build/lib/system_logic
+[0.842s] copying system_logic/target_subscriber_node.py -> /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/build/lib/system_logic
+[0.842s] copying system_logic/__init__.py -> /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/build/lib/system_logic
+[0.842s] copying system_logic/target_detector_node.py -> /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/build/lib/system_logic
+[0.842s] running install
+[0.846s] running install_lib
+[0.859s] creating /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages/system_logic
+[0.860s] copying /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/build/lib/system_logic/target_subscriber_node.py -> /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages/system_logic
+[0.860s] copying /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/build/lib/system_logic/__init__.py -> /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages/system_logic
+[0.860s] copying /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/build/lib/system_logic/target_detector_node.py -> /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages/system_logic
+[0.860s] byte-compiling /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages/system_logic/target_subscriber_node.py to target_subscriber_node.cpython-312.pyc
+[0.860s] byte-compiling /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages/system_logic/__init__.py to __init__.cpython-312.pyc
+[0.860s] byte-compiling /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages/system_logic/target_detector_node.py to target_detector_node.cpython-312.pyc
+[0.861s] running install_data
+[0.861s] creating /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/share/ament_index
+[0.861s] creating /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/share/ament_index/resource_index
+[0.861s] creating /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/share/ament_index/resource_index/packages
+[0.861s] copying resource/system_logic -> /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/share/ament_index/resource_index/packages
+[0.861s] copying package.xml -> /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/share/system_logic
+[0.861s] running install_egg_info
+[0.875s] Copying build/system_logic/system_logic.egg-info to /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages/system_logic-0.0.0-py3.12.egg-info
+[0.875s] running install_scripts
+[0.961s] Installing target_detector script to /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/system_logic
+[0.961s] Installing target_processor script to /home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/system_logic
+[0.962s] writing list of installed files to '/home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/install.log'
+[0.976s] Invoked command in '/home/ieerasufcg/arena_ws/src/system_logic' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ieerasufcg/arena_ws/src/system_logic/install/system_logic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/system_logic build --build-base /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/build install --record /home/ieerasufcg/arena_ws/src/system_logic/build/system_logic/install.log --single-version-externally-managed install_data

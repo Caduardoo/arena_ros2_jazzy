@@ -1,0 +1,70 @@
+[  5%] [32mBuilding CXX object CMakeFiles/webcam_node.dir/src/webcam_publisher_node.cpp.o[0m
+[  5%] Built target mocap_interfaces__rosidl_generator_type_description
+[  5%] Built target ament_cmake_python_copy_mocap_interfaces
+[  8%] Built target mocap_interfaces__cpp
+[ 22%] Built target mocap_interfaces__rosidl_generator_c
+[ 38%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 38%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 38%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 38%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 38%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 38%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap_interfaces/msg/target__type_support.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap_interfaces/msg/target__type_support.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/target__type_support.cpp.o[0m
+[ 50%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/target__type_support.c.o[0m
+running egg_info
+[ 52%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap_interfaces/msg/detail/dds_fastrtps/target__type_support.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap_interfaces/msg/detail/target__type_support_c.cpp.o[0m
+[ 58%] [32m[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_c.so[0m
+writing mocap_interfaces.egg-info/PKG-INFO
+writing dependency_links to mocap_interfaces.egg-info/dependency_links.txt
+writing top-level names to mocap_interfaces.egg-info/top_level.txt
+[ 61%] [32m[1mLinking C shared library libmocap_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 61%] Built target mocap_interfaces__rosidl_typesupport_introspection_c
+[ 61%] Built target mocap_interfaces__rosidl_typesupport_c
+reading manifest file 'mocap_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'mocap_interfaces.egg-info/SOURCES.txt'
+[ 61%] Built target ament_cmake_python_build_mocap_interfaces_egg
+[ 63%] [32m[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_cpp.so[0m
+[ 66%] [32m[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 66%] Built target mocap_interfaces__rosidl_typesupport_cpp
+[ 66%] Built target mocap_interfaces__rosidl_typesupport_introspection_cpp
+[ 69%] [32m[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 72%] [32m[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 72%] Built target mocap_interfaces__rosidl_typesupport_fastrtps_c
+[ 72%] Built target mocap_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 72%] Built target mocap_interfaces
+[ 75%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 75%] Built target mocap_interfaces__py
+[ 77%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_generator_py.dir/rosidl_generator_py/mocap_interfaces/msg/_target_s.c.o[0m
+[ 80%] [32m[1mLinking C shared library libmocap_interfaces__rosidl_generator_py.so[0m
+[ 80%] Built target mocap_interfaces__rosidl_generator_py
+[ 88%] [32mBuilding C object CMakeFiles/mocap_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/mocap_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/mocap_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 97%] [32m[1mLinking C shared module rosidl_generator_py/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[ 97%] [32m[1mLinking C shared module rosidl_generator_py/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[ 97%] [32m[1mLinking C shared module rosidl_generator_py/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_c.so[0m
+[ 97%] Built target mocap_interfaces_s__rosidl_typesupport_introspection_c
+[ 97%] Built target mocap_interfaces_s__rosidl_typesupport_fastrtps_c
+[ 97%] Built target mocap_interfaces_s__rosidl_typesupport_c
+[01m[K/home/ieerasufcg/arena_ws/src/mocap_interfaces/src/webcam_publisher_node.cpp:67:5:[m[K [01;35m[Kwarning: [m[Ksecond argument of ‘[01m[Kint[01;32m[K main[m[K(int, char*)[m[K’ should be ‘[01m[Kchar **[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmain-Wmain]8;;[m[K]
+   67 | int [01;35m[Kmain[m[K(int argc, char * argv) {
+      |     [01;35m[K^~~~[m[K
+[01m[K/home/ieerasufcg/arena_ws/src/mocap_interfaces/src/webcam_publisher_node.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char*)[m[K’:
+[01m[K/home/ieerasufcg/arena_ws/src/mocap_interfaces/src/webcam_publisher_node.cpp:68:24:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kchar*[m[K’ to ‘[01m[Kconst char* const*[m[K’
+   68 |     rclcpp::init(argc, [01;31m[Kargv[m[K);
+      |                        [01;31m[K^~~~[m[K
+      |                        [01;31m[K|[m[K
+      |                        [01;31m[Kchar*[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/ieerasufcg/arena_ws/src/mocap_interfaces/src/webcam_publisher_node.cpp:6[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:77:24:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid rclcpp::[01;32m[Kinit[m[K(int, const char* const*, const InitOptions&, SignalHandlerOptions)[m[K’
+   77 |   [01;36m[Kchar const * const * argv[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/webcam_node.dir/build.make:76: CMakeFiles/webcam_node.dir/src/webcam_publisher_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:623: CMakeFiles/webcam_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
