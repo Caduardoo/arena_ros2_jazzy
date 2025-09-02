@@ -45,7 +45,8 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt ./requirements.txt
 RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
 
-RUN echo 'source /opt/ros/jazzy/setup.bash'
+RUN echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc
+RUN export ROS_DOMAIN_ID=1
 
 WORKDIR /home/ws
 
