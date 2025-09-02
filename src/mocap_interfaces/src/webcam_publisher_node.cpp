@@ -15,7 +15,7 @@ class WebcamPublisher : public rclcpp::Node {
     public: 
     explicit WebcamPublisher() : Node("webcam_publisher_node") 
     {
-        this->declare_parameter<int>("camera_index", 2);
+        this->declare_parameter<int>("camera_index", 0);
         this->declare_parameter<double>("frame_rate",30.0);
         this->declare_parameter<std::string>("topic_name", "image_raw0");
 
