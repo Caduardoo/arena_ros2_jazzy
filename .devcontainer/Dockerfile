@@ -21,8 +21,10 @@ RUN apt-get update && apt-get install -y sudo \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
 RUN apt-get update && apt-get install -y \ 
-    build-essential \
+    vim git cmake build-essential pkg-config \
     coinor-libipopt-dev \
+    freeglut3-dev \
+    less \
     libeigen3-dev \    
     libfreenect-dev \
     libpcl-dev \
@@ -30,8 +32,13 @@ RUN apt-get update && apt-get install -y \
     libyaml-cpp-dev \
     python3-colcon-common-extensions \
     python3-pip \
+    python3-serial \
+    python3-opencv \
+    ros-dev-tools \
+    ros-jazzy-rviz2 \
     ros-jazzy-camera-info-manager \
     ros-jazzy-depth-image-proc \
+    ros-jazzy-image-tools \
     ros-jazzy-pcl-ros \
     ros-jazzy-pcl-conversions \
     ros-jazzy-geometry-msgs \
@@ -39,8 +46,18 @@ RUN apt-get update && apt-get install -y \
     ros-jazzy-launch* \
     ros-jazzy-irobot-create-msgs \
     ros-jazzy-nav2-map-server \
-    coinor-libipopt-dev \
     && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /tmp
+RUN GIT_TERMINAL_PROMPT=0 git clone https://github.com/OpenKinect/libfreenect.git && \
+    cd libfreenect && \ 
+    mkdir build && cd build && \
+    # flag to not build libfreenect -DBUILD_EXAMPLES=OFF -DBUILD_REDIST_PACKAGE=OFF
+    cmake .. && \
+    make && \
+    make install && \
+    ldconfig && \
+    cd / && rm -rf /tmp/libfreenect
 
 COPY requirements.txt ./requirements.txt
 RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
@@ -49,6 +66,8 @@ RUN echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc
 RUN export ROS_DOMAIN_ID=1
 
 WORKDIR /home/ws
+RUN GIT_TERMINAL_PROMPT=0 git clone https://github.com/fadlio/kinect_ros2.git src/kinect_ros2
+RUN sed -i 's/cv_bridge.h/cv_bridge.hpp/g' src/kinect_ros2/include/kinect_ros2/kinect_ros2_component.hpp
 
 # SHELL ["/bin/bash", "-c"]
 # RUN echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc && \
