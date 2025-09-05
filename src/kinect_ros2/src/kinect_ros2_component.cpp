@@ -136,7 +136,16 @@ void KinectRosComponent::rgb_cb(freenect_device * dev, void * rgb_ptr, uint32_t 
 
 void KinectRosComponent::timer_callback()
 {
-  freenect_process_events(fn_ctx_);
+  int res = freenect_process_events(fn_ctx_);
+  
+  RCLCPP_INFO(this->get_logger(), "Timer callback triggered");
+  
+  int res = freenect_process_events(fn_ctx_);
+  if (res <0 && res != -10) {
+    RCLCPP_ERROR(this->get_logger(), "Freenect event processing error: %d",res)>
+    return;
+  }
+
   auto header = std_msgs::msg::Header();
   header.frame_id = "kinect_depth";
 
