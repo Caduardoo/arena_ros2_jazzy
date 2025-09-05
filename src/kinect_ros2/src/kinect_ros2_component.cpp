@@ -140,7 +140,7 @@ void KinectRosComponent::timer_callback()
 
   int res = freenect_process_events(fn_ctx_);
   if (res <0 && res != -10) {
-    RCLCPP_ERROR(this->get_logger(), "Freenect event processing error: %d",res)>
+    RCLCPP_ERROR(this->get_logger(), "Freenect event processing error: %d",res);
     return;
   }
 
