@@ -24,6 +24,10 @@ RUN apt-get update && apt-get install -y \
     vim git cmake build-essential pkg-config \
     coinor-libipopt-dev \
     freeglut3-dev \
+    libturbojpeg0-dev \
+    libglfw3-dev \ 
+    freenect \
+    libfreenect-demos \
     less \
     libeigen3-dev \    
     libfreenect-dev \
