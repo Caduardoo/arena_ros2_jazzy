@@ -3,6 +3,7 @@ FROM ros:jazzy
 ARG USERNAME=vscode
 ARG USER_UID=1000
 ARG USER_GID=${USER_UID}
+ARG HOST_VIDEO_GID
 
 # RUN if id -u $USER_UID ; then userdel `id -un $USER_UID` ; fi
 
@@ -17,6 +18,10 @@ RUN apt-get update && apt-get install -y sudo \
         groupadd -g $USER_GID $USERNAME; \
     fi \  
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME --shell /bin/bash \
+    && if [ ! -z "$HOST_VIDEO_GID" ]; then \
+        if getent group video; then groupmod -g $HOST_VIDEO_GID video; else groupadd --gid $HOST_VIDEO_GID video; fi && \
+        usermod -a -G video $USERNAME; \
+       fi \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
@@ -66,20 +71,21 @@ RUN GIT_TERMINAL_PROMPT=0 git clone https://github.com/OpenKinect/libfreenect.gi
 COPY requirements.txt ./requirements.txt
 RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
 
-RUN echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc
-RUN export ROS_DOMAIN_ID=1
+ENV ROS_DOMAIN_ID=1
 
 WORKDIR /home/ws
 RUN GIT_TERMINAL_PROMPT=0 git clone https://github.com/fadlio/kinect_ros2.git src/kinect_ros2
 RUN sed -i 's/cv_bridge.h/cv_bridge.hpp/g' src/kinect_ros2/include/kinect_ros2/kinect_ros2_component.hpp
+
+USER $USERNAME
+
+RUN echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc
 
 # SHELL ["/bin/bash", "-c"]
 # RUN echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc && \
 #     echo 'source /ros2_ws/install/setup.bash' >> ~/.bashrc
 
 # COPY entrypoint.sh /entrypoint.sh
-
-USER $USERNAME
 
 # ENTRYPOINT ["/entrypoint.sh"]
 # CMD ["/bin/bash"]
