@@ -23,11 +23,13 @@
         "--device=/dev/video0",
         "--device=/dev/video1",
         "-e", "DISPLAY=${env:DISPLAY}",
+        "-e", "CAM_ID=0",
         "--privileged"
     ],
     "mounts": [
        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
-       "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached"
+       "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached",
+       "source=${localEnv:HOME}/Documents/cdy/VirtualMoCap,target=/home/VirtualMoCap,type=bind,consistency=cached"
     ],
     "containerEnv": {
         "DISPLAY": "unix:0",
