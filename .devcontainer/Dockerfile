@@ -57,6 +57,9 @@ RUN apt-get update && apt-get install -y \
     ros-jazzy-nav2-map-server \
     && rm -rf /var/lib/apt/lists/*
 
+COPY requirements.txt ./requirements.txt
+RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
+
 WORKDIR /tmp
 RUN GIT_TERMINAL_PROMPT=0 git clone https://github.com/OpenKinect/libfreenect.git && \
     cd libfreenect && \ 
@@ -76,6 +79,10 @@ ENV ROS_DOMAIN_ID=1
 WORKDIR /home/ws
 RUN GIT_TERMINAL_PROMPT=0 git clone https://github.com/fadlio/kinect_ros2.git src/kinect_ros2
 RUN sed -i 's/cv_bridge.h/cv_bridge.hpp/g' src/kinect_ros2/include/kinect_ros2/kinect_ros2_component.hpp
+
+WORKDIR /home/VirtualMoCap
+COPY requirements.txt ./requirements.txt
+RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
 
 USER $USERNAME
 
