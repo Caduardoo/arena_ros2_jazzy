@@ -34,6 +34,7 @@ RUN apt-get update && apt-get install -y \
     freenect \
     libfreenect-demos \
     less \
+    libcap-dev \
     libeigen3-dev \    
     libfreenect-dev \
     libpcl-dev \
