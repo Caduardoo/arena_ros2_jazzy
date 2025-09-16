@@ -32,11 +32,17 @@ RUN apt-get update && apt-get install -y \
     libturbojpeg0-dev \
     libglfw3-dev \ 
     freenect \
+    libatlas-base-dev \
+    libdrm-dev \
     libfreenect-demos \
     less \
+    libcamera-dev \
     libcap-dev \
     libeigen3-dev \    
     libfreenect-dev \
+    libfmt-dev \
+    libkms++-dev \
+    libopenjp2-7 \
     libpcl-dev \
     libyaml-cpp-dev \
     libyaml-cpp-dev \
@@ -56,6 +62,7 @@ RUN apt-get update && apt-get install -y \
     ros-jazzy-launch* \
     ros-jazzy-irobot-create-msgs \
     ros-jazzy-nav2-map-server \
+    ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt ./requirements.txt
