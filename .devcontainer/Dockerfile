@@ -33,7 +33,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     vim git cmake build-essential pkg-config \
     # Math/Vision libs
     coinor-libipopt-dev freeglut3-dev libturbojpeg0-dev libglfw3-dev \ 
-    libatlas-base-dev libeigen3-dev libpcl-dev ffmpeg python3-opencv \
+    libatlas-base-dev libeigen3-dev libpcl-dev \
     # Hardware libs
     freenect libfreenect-dev libfreenect-demos \
     # Misc libs
