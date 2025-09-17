@@ -9,9 +9,7 @@
             "HOST_VIDEO_GID": "44"
         }
     },
-
     //"onCreateCommand": "(sudo groupmod -g 44 video || sudo groupadd --gid 44 video) && sudo usermod -a -G video ieerasufcg",
-
     "remoteUser": "ieerasufcg",
     "workspaceFolder": "/home/ws",
     "workspaceMount": "source=${localWorkspaceFolder},target=/home/ws,type=bind",

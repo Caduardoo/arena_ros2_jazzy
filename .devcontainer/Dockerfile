@@ -1,4 +1,6 @@
-FROM ros:humble-ros-base
+FROM balenalib/raspberry-pi-4-64-debian:bookworm
+
+ENV DEBIAN_FRONTEND=noninteractive
 
 ARG USERNAME=ieeerasufcg
 ENV USERNAME=${USERNAME}
@@ -24,10 +26,12 @@ RUN apt-get update && apt-get install -y sudo \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
-RUN apt-get update && apt-get install -y --no-install-recommends curl gnupg \
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl gnupg lsb-release \
     && rm -rf /var/lib/apt/lists/*
-RUN curl -s https://archive.raspberrypi.org/debian/raspberrypi.gpg.key | apt-key add - && \
-    echo "deb https://archive.raspberrypi.org/debian/ bullseye main" > /etc/apt/sources.list.d/raspi.list
+
+RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg && \
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2.list
 
 RUN apt-get update && apt-get install -y --no-install-recommends \ 
     vim git cmake build-essential pkg-config \
@@ -49,6 +53,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     less \
     ## libkms++-dev \
     && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt ./requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 WORKDIR /tmp/build_libfreenect
 RUN GIT_TERMINAL_PROMPT=0 git clone https://github.com/OpenKinect/libfreenect.git . && \
