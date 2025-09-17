@@ -36,6 +36,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libatlas-base-dev libeigen3-dev libpcl-dev \
     # Hardware libs
     freenect libfreenect-dev libfreenect-demos \
+    libcamera-dev python3-libcamera libcamera-apps \
     # Misc libs
     libdrm-dev libcap-dev libfmt-dev libopenjp2-7 libyaml-cpp-dev \
     # Python tools
