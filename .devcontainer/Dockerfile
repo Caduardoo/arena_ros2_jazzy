@@ -1,6 +1,33 @@
-FROM balenalib/raspberrypi4-64-debian:bookworm
+FROM ros:humble-ros-base as builder
 
-ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git pkg-config cmake g++ python3-pip \
+    libgnutls28-dev openssl libtiff-dev libevent-dev \
+    libdrm-dev python3-yaml python3-ply python3-jinja2 \
+    libboost-program-options-dev libexif-dev \
+    libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev \
+    libpng-dev libavcodec-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install meson ninja
+
+WORKDIR /usr/src
+RUN git clone https://github.com/raspberrypi/libcamera.git && \
+    cd libcamera && \
+    git checkout libcamera-v0.3.0-rpi && \
+    meson setup build -Dpycamera=enabled -Ddocumentation=disabled && \
+    ninja -C build && \
+    ninja -C build install
+
+WORKDIR /usr/src
+RUN git clone https://github.com/raspberrypi/rpicam-apps.git && \
+    cd rpicam-apps && \
+    git checkout v1.9.0 && \
+    meson setup build && \
+    ninja -C build && \
+    ninja -C build install
+
+FROM ros:humble-ros-base
 
 ARG USERNAME=ieeerasufcg
 ENV USERNAME=${USERNAME}
@@ -26,15 +53,11 @@ RUN apt-get update && apt-get install -y sudo \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl gnupg lsb-release \
-    && rm -rf /var/lib/apt/lists/*
-
-RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg && \
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2.list
+COPY --from=builder /usr/local/ /usr/local/
+RUN ldconfig
 
 RUN apt-get update && apt-get install -y --no-install-recommends \ 
-    vim git cmake build-essential pkg-config \
+    vim git cmake build-essential pkg-config less ros-dev-tools \
     # Math/Vision libs
     coinor-libipopt-dev freeglut3-dev libturbojpeg0-dev libglfw3-dev \ 
     libatlas-base-dev libeigen3-dev libpcl-dev \
@@ -50,7 +73,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-image-tools ros-humble-pcl-ros ros-humble-pcl-conversions \
     ros-humble-geometry-msgs ros-humble-sensor-msgs ros-humble-launch* \
     ros-humble-irobot-create-msgs ros-humble-nav2-map-server \
-    less \
     ## libkms++-dev \
     && rm -rf /var/lib/apt/lists/*
 
