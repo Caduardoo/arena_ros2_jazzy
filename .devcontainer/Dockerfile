@@ -14,7 +14,6 @@ RUN pip3 install meson ninja
 WORKDIR /usr/src
 RUN git clone https://github.com/raspberrypi/libcamera.git && \
     cd libcamera && \
-    git checkout libcamera-v0.3.0-rpi && \
     meson setup build -Dpycamera=enabled -Ddocumentation=disabled && \
     ninja -C build && \
     ninja -C build install
@@ -22,7 +21,6 @@ RUN git clone https://github.com/raspberrypi/libcamera.git && \
 WORKDIR /usr/src
 RUN git clone https://github.com/raspberrypi/rpicam-apps.git && \
     cd rpicam-apps && \
-    git checkout v1.9.0 && \
     meson setup build && \
     ninja -C build && \
     ninja -C build install
