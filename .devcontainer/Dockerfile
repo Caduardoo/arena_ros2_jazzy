@@ -72,6 +72,44 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-geometry-msgs ros-humble-sensor-msgs ros-humble-launch* \
     ros-humble-irobot-create-msgs ros-humble-nav2-map-server \
     ## libkms++-dev \
+RUN apt-get update && apt-get install -y \ 
+    vim git cmake build-essential pkg-config \
+    coinor-libipopt-dev \
+    freeglut3-dev \
+    libturbojpeg0-dev \
+    libglfw3-dev \ 
+    freenect \
+    libatlas-base-dev \
+    libdrm-dev \
+    libfreenect-demos \
+    less \
+    libcamera-dev \
+    libcap-dev \
+    libeigen3-dev \    
+    libfreenect-dev \
+    libfmt-dev \
+    libkms++-dev \
+    libopenjp2-7 \
+    libpcl-dev \
+    libyaml-cpp-dev \
+    libyaml-cpp-dev \
+    python3-colcon-common-extensions \
+    python3-pip \
+    python3-serial \
+    python3-opencv \
+    ros-dev-tools \
+    ros-jazzy-rviz2 \
+    ros-jazzy-camera-info-manager \
+    ros-jazzy-depth-image-proc \
+    ros-jazzy-image-tools \
+    ros-jazzy-pcl-ros \
+    ros-jazzy-pcl-conversions \
+    ros-jazzy-geometry-msgs \
+    ros-jazzy-sensor-msgs \
+    ros-jazzy-launch* \
+    ros-jazzy-irobot-create-msgs \
+    ros-jazzy-nav2-map-server \
+    ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt ./requirements.txt
