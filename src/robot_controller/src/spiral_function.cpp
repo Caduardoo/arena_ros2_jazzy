@@ -5,7 +5,7 @@
 class spiral_function_node : public rclcpp::Node {
     public:
     spiral_function_node() : Node("spiral_function_node") {
-        publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel",10);
+        publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel",10);
         timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&spiral_function_node::timer_callback, this));
 
         RCLCPP_INFO(this->get_logger(), "Spiral controller node: Starting");
