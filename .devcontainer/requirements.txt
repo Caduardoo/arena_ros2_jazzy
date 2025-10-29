@@ -1,5 +1,0 @@
-numpy
-streamlit
-picamera2
-pigpio
-opencv-python-headless

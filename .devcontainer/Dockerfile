@@ -88,13 +88,10 @@ WORKDIR /home/ws
 RUN GIT_TERMINAL_PROMPT=0 git clone https://github.com/fadlio/kinect_ros2.git src/kinect_ros2
 RUN sed -i 's/cv_bridge.h/cv_bridge.hpp/g' src/kinect_ros2/include/kinect_ros2/kinect_ros2_component.hpp
 
-WORKDIR /home/VirtualMoCap
-COPY requirements.txt ./requirements.txt
-RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
-
 USER $USERNAME
 
 RUN echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc
+RUN echo 'source install/setup.bash' >> ~/.bashrc
 
 # SHELL ["/bin/bash", "-c"]
 # RUN echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc && \
