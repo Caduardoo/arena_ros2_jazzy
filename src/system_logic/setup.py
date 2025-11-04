@@ -19,8 +19,10 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': ['target_detector = system_logic.target_detector_node:main',
-			    'target_subscriber = system_logic.target_subscriber_node:main',
+        'console_scripts': [
+            'target_detector = system_logic.target_detector_node:main',
+			'target_subscriber = system_logic.target_subscriber_node:main',
+            'picamera_node = system_logic.picamera_node:main',
         ],
     },
 )

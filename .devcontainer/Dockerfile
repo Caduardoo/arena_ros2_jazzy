@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y vim git cmake build-essential pkg-confi
     libcap-dev libeigen3-dev libfreenect-dev libfmt-dev libopenjp2-7 \
     libpcl-dev libyaml-cpp-dev libyaml-cpp-dev python3-colcon-common-extensions \
     python3-pip python3-serial python3-opencv \
-    ros-dev-tools ros-jazzy-rviz2 ros-jazzy-camera-info-manager \
+    ros-dev-tools ros-jazzy-rviz2 ros-jazzy-camera-info-manager ros-jazzy-cv-bridge \
     ros-jazzy-depth-image-proc ros-jazzy-image-tools ros-jazzy-pcl-ros \
     ros-jazzy-pcl-conversions ros-jazzy-geometry-msgs ros-jazzy-sensor-msgs \
     ros-jazzy-launch* ros-jazzy-irobot-create-msgs ros-jazzy-nav2-map-server \
@@ -39,7 +39,7 @@ RUN apt-get update && apt-get install -y vim git cmake build-essential pkg-confi
     python3-yaml python3-ply python3-jinja2 openssl \
     libdw-dev libunwind-dev libudev-dev libudev-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev \
     libpython3-dev pybind11-dev libevent-dev libtiff-dev qt6-base-dev qt6-tools-dev-tools liblttng-ust-dev \
-    python3-jinja2 lttng-tools libexif-dev libjpeg-dev pybind11-dev libevent-dev libgtest-dev abi-compliance-checker \
+    python3-jinja2 python3-libcamera lttng-tools libexif-dev libjpeg-dev pybind11-dev libevent-dev libgtest-dev abi-compliance-checker \
     ffmpeg libavcodec-extra libavcodec-dev libavdevice-dev libpng-dev libpng-tools libepoxy-dev qt5-qmake qtmultimedia5-dev \
     && rm -rf /var/lib/apt/lists/*
 
