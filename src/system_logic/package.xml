@@ -10,6 +10,12 @@
   <depend>rclpy</depend>
   <depend>mocap_interfaces</depend>
   <depend>geometry_msgs</depend>
+  <depend>time</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>picamera2</depend>
+  <depend>libcamera</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
