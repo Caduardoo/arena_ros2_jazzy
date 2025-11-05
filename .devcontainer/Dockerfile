@@ -86,6 +86,7 @@ USER $USERNAME
 
 RUN echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc
 RUN echo 'source install/setup.bash' >> ~/.bashrc
+RUN sudo ldconfig
 
 # RUN source install/setup.bash
 
